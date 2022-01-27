@@ -17,6 +17,7 @@ Bonus:
 const app = new Vue({
    el: "#root",
    data: {
+      autoNext: 0,
       actualImg: 0,
       images: [
          {
@@ -61,7 +62,14 @@ const app = new Vue({
             this.actualImg--;
          }
       },
+      autoChange() {
+         this.autoNext = setInterval(this.nextImg, 3000);
+      },
+      stopAutoChange() {
+         clearInterval(this.autoNext);
+      },
+   },
+   created() {
+      this.autoChange();
    },
 });
-
-console.log(app.images.length);
