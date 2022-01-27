@@ -28,10 +28,7 @@
                <div class="slider d-flex align-items-center">
                   <img class="img-fluid" src="img/image1.jpg" alt="" />
                   <div class="slider-dots">
-                     <div class="dot mx-2 active"></div>
-                     <div class="dot mx-2"></div>
-                     <div class="dot mx-2"></div>
-                     <div class="dot mx-2"></div>
+                     <div v-for="(img, index) in images" class="dot mx-2 active"></div>
                   </div>
                </div>
             </div>
