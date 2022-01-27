@@ -9,8 +9,8 @@
 |Se stiamo visualizzando l'ultima immagine, la freccetta  a destra può: scomparire passare alla prima immagine
 Siate coerenti: o scompaiono o continuano a navigare, no a soluzioni miste!!
 Bonus:
-1- applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
-2- quando il mouse va in hover sulle freccette o sui pallini l'autoplay si interrompe
+|1- applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
+|2- quando il mouse va in hover sulle freccette o sui pallini l'autoplay si interrompe
 3 - l'autoplay riparte quando il mouse lascia le freccette o i pallini
 */
 
