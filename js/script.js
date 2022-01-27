@@ -21,7 +21,24 @@ const app = new Vue({
    el: "#root",
    data: {
       actualImg: 0,
-      images: ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg", "img/image4.jpg"],
+      images: [
+         {
+            desc: "Lavender fields",
+            url: "img/image1.jpg",
+         },
+         {
+            desc: "Small north Italian lake",
+            url: "img/image2.jpg",
+         },
+         {
+            desc: "Dolomiti's highlands",
+            url: "img/image3.jpg",
+         },
+         {
+            desc: "Scottish waterfall",
+            url: "img/image4.jpg",
+         },
+      ],
    },
    methods: {
       changeImg(index) {
