@@ -7,16 +7,33 @@
    cursor: pointer;
 }
 
-.slider .slider-dots {
-   background-color: rgba(0, 0, 0, 0.3);
-   padding: 5px;
+.row {
+   border: 1px solid black;
    border-radius: 20px;
+}
+
+.slider .slider-dots {
+   background-color: rgba(255, 255, 255, 0.58);
+   padding: 5px;
+   border-radius: 20px 20px 0 0;
+   border: 1px solid rgb(71, 71, 71);
+   border-bottom: none;
    display: flex;
    position: absolute;
-   top: 100%;
+   bottom: 0;
    left: 50%;
 
    transform: translateX(-50%);
+}
+
+.bar-dots {
+   background-color: rgb(71, 71, 71);
+   width: 100%;
+   height: 15px;
+   display: flex;
+   position: absolute;
+   bottom: 0;
+   left: 0;
 }
 
 .slider-dots .dot {
@@ -25,8 +42,13 @@
    border-radius: 50%;
    background-color: #fff;
    cursor: pointer;
+   z-index: 1;
 }
 
 .slider-dots .dot.active {
-   background-color: darkblue;
+   background-color: rgb(71, 71, 71);
+}
+
+img {
+   user-select: none;
 }
