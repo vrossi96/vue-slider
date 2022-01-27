@@ -17,12 +17,20 @@ Bonus:
 3 - l'autoplay riparte quando il mouse lascia le freccette o i pallini
 */
 
-console.log("OK", Vue);
-Vue.config.devtools = true;
-
 const app = new Vue({
    el: "#root",
    data: {
-      images: ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"],
+      actualImg: 0,
+      images: ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg", "img/image4.jpg"],
+   },
+   method: {
+      changeImg(index) {
+         this.actualImg = index;
+      },
+      isActive(index) {
+         if (this.actualImg === index) {
+            return true;
+         }
+      },
    },
 });
