@@ -33,5 +33,11 @@ const app = new Vue({
          }
          return false;
       },
+      nextImg() {
+         this.actualImg++;
+      },
+      prevImg() {
+         this.actualImg--;
+      },
    },
 });
