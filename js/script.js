@@ -23,7 +23,7 @@ const app = new Vue({
       actualImg: 0,
       images: ["img/image1.jpg", "img/image2.jpg", "img/image3.jpg", "img/image4.jpg"],
    },
-   method: {
+   methods: {
       changeImg(index) {
          this.actualImg = index;
       },
@@ -31,6 +31,7 @@ const app = new Vue({
          if (this.actualImg === index) {
             return true;
          }
+         return false;
       },
    },
 });
