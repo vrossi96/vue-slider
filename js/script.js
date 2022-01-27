@@ -34,10 +34,20 @@ const app = new Vue({
          return false;
       },
       nextImg() {
-         this.actualImg++;
+         if (this.actualImg === this.images.length - 1) {
+            this.actualImg = 0;
+         } else {
+            this.actualImg++;
+         }
       },
       prevImg() {
-         this.actualImg--;
+         if (this.actualImg === 0) {
+            this.actualImg = this.images.length;
+         } else {
+            this.actualImg--;
+         }
       },
    },
 });
+
+console.log(app.images.length);
