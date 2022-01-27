@@ -20,4 +20,18 @@ Bonus:
 
 const app = new Vue({
    el: "#root",
+   images: [
+      {
+         imgName: 'image1.jpg'
+      },
+      {
+         imgName: 'image2.jpg'
+      },
+      {
+         imgName: 'image3.jpg'
+      },
+      {
+         imgName: 'image4.jpg'
+      },
+   ]
 });
